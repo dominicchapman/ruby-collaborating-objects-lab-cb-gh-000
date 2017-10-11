@@ -26,6 +26,11 @@ class Artist
     @@all << self
   end
 
+  # Artist #print_songs lists all of the artist's songs
+  def print_songs
+    self.songs.map { |song| puts song.name }
+  end
+
 end
 
 
@@ -50,5 +55,3 @@ end
 # artist.add_song(billie_jean)
 # artist.print_songs
 #=> "Dirty Diana\nBillie Jean\n"
-
-
