@@ -13,13 +13,15 @@ class MP3Importer
   # MP3Importer #files normalizes the filename to just the mp3 filename with no path
   def files
     @files ||= Dir.glob("#{path}/*.mp3").collect{ |f| f.gsub("#{path}/", "") }
-  end
-
-  def import
     binding.pry
   end
 
+  def import
+  end
+
 end
+
+music_importer = MP3Importer.new(test_music_path)
 
 # test_music_path = "./spec/fixtures/mp3s"
 # music_importer = MP3Importer.new(test_music_path)
