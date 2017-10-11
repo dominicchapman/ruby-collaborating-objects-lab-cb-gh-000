@@ -8,6 +8,7 @@ class MP3Importer
     @path = filepath
   end
 
+  # MP3Importer #files loads all the mp3 files in the path directory
   def files
     @files ||= Dir.glob("#{path}/*.mp3").collect{ |f| f.gsub("#{path}/", "") }
   end
