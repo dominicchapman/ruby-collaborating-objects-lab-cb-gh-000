@@ -10,7 +10,8 @@
 class Song
 
   # Song #name= sets the song name
-  attr_accessor :name
+  # Song #artist= sets the artist object to belong to the song
+  attr_accessor :name, :artist
 
   # Song #initialize with #name accepts a name for the song
   def initialize(name)
