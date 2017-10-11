@@ -12,8 +12,6 @@ class Song
 
 end
 
-
-
 # song = Song.new('Man in the Mirror')
 # file_name = 'Michael Jackson - Black or White - pop.mp3'
 
