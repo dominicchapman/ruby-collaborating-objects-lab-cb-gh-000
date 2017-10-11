@@ -1,19 +1,4 @@
 
-# artist = Artist.new('Michael Jackson')
-# artist.name
-#=> 'Michael Jackson'
-
-# song_one = Song.new("Rock With You")
-# song_two = Song.new("Smooth Criminal")
-# artist.add_song(song_one)
-# artist.add_song(song_two)
-# artist.songs)
-#=> ([song_one, song_two])
-
-# artist.save
-# Artist.all.include?(artist)
-#=> true
-
 class Artist
 
   @@all = []
@@ -42,3 +27,21 @@ class Artist
   end
 
 end
+
+
+
+
+# artist = Artist.new('Michael Jackson')
+# artist.name
+#=> 'Michael Jackson'
+
+# song_one = Song.new("Rock With You")
+# song_two = Song.new("Smooth Criminal")
+# artist.add_song(song_one)
+# artist.add_song(song_two)
+# artist.songs)
+#=> ([song_one, song_two])
+
+# artist.save
+# Artist.all.include?(artist)
+#=> true
