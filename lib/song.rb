@@ -23,7 +23,7 @@ end
 #=> 'Man in the Mirror'
 
 # new_instance = Song.new_by_filename(file_name)
-# new_instance.name 
+# new_instance.name
 #=> 'Black or White'
 # new_instance.artist.name
 #=> 'Michael Jackson'
