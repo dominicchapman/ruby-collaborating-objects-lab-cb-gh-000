@@ -7,9 +7,16 @@
 # song_two = Song.new("Smooth Criminal")
 # artist.add_song(song_one)
 # artist.add_song(song_two)
-# expect(artist.songs).to eq([song_one, song_two])
+# artist.songs)
+#=> ([song_one, song_two])
+
+# artist.save
+# Artist.all.include?(artist)
+#=> true
 
 class Artist
+
+  @@all = []
 
   # Artist #name= sets the artist name
   # Artist #songs keeps track of an artist's songs
@@ -23,6 +30,14 @@ class Artist
 
   def add_song(song)
     @songs << song
+  end
+
+  def self.all
+    @@all
+  end
+
+  def save
+    @@all << self
   end
 
 end
