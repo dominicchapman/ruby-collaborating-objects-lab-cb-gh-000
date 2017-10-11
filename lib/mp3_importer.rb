@@ -11,11 +11,11 @@ class MP3Importer
   # MP3Importer #files loads all the mp3 files in the path directory
   # MP3Importer #files normalizes the filename to just the mp3 filename with no path
   def files
-    @files ||= Dir.glob("#{path}/*.mp3").collect{ |f| f.gsub("#{path}/", "") }
+    @files ||= Dir.glob("#{path}/*.mp3").collect{ |file| file.gsub("#{path}/", "") }
   end
 
   def import
-    files.each{|f| Song.new_by_filename(f)}
+    files.each{|file| Song.new_by_filename(file)}
   end
 
 end
