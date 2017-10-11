@@ -1,3 +1,4 @@
+require 'pry'
 
 class MP3Importer
 
@@ -14,6 +15,10 @@ class MP3Importer
     @files ||= Dir.glob("#{path}/*.mp3").collect{ |f| f.gsub("#{path}/", "") }
   end
 
+  def import
+    binding.pry
+  end
+
 end
 
 # test_music_path = "./spec/fixtures/mp3s"
@@ -21,7 +26,15 @@ end
 # music_importer.path
 #=> test_music_path
 
-
 # music_importer = MP3Importer.new(test_music_path)
 # music_importer.files.size
 #=> 4
+
+# Artist.class_variable_set("@@all",[])
+# music_importer = MP3Importer.new(test_music_path)
+# music_importer.import
+
+expect(Artist.all.size).to eq(3)
+    expect(Artist.all.first.songs.empty? && Artist.all.last.songs.empty?).to eq(false)
+  end
+end
