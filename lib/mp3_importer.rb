@@ -25,4 +25,3 @@ end
 # music_importer = MP3Importer.new(test_music_path)
 # music_importer.files.size
 #=> 4
-# so files should return an array of files in test_music_path
