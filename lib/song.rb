@@ -10,6 +10,10 @@ class Song
     @name = name
   end
 
+  def self.new_by_filename(file_name)
+    new_song = self.new(file_name)
+  end
+
 end
 
 # song = Song.new('Man in the Mirror')
@@ -17,3 +21,9 @@ end
 
 # song.name
 #=> 'Man in the Mirror'
+
+# new_instance = Song.new_by_filename(file_name)
+# new_instance.name 
+#=> 'Black or White'
+# new_instance.artist.name
+#=> 'Michael Jackson'
