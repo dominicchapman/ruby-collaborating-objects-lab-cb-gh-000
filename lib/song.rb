@@ -1,12 +1,4 @@
 
-# song = Song.new('Man in the Mirror')
-# file_name = 'Michael Jackson - Black or White - pop.mp3'
-
-# song.name
-#=> 'Man in the Mirror'
-
-
-
 class Song
 
   # Song #name= sets the song name
@@ -19,3 +11,11 @@ class Song
   end
 
 end
+
+
+
+# song = Song.new('Man in the Mirror')
+# file_name = 'Michael Jackson - Black or White - pop.mp3'
+
+# song.name
+#=> 'Man in the Mirror'

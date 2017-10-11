@@ -29,8 +29,6 @@ class Artist
 end
 
 
-
-
 # artist = Artist.new('Michael Jackson')
 # artist.name
 #=> 'Michael Jackson'
