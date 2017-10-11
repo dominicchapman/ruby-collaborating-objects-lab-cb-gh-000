@@ -20,10 +20,6 @@ class MP3Importer
 
 end
 
-test_music_path = "./spec/fixtures/mp3s"
-music_importer = MP3Importer.new(test_music_path)
-music_importer.files
-
 # test_music_path = "./spec/fixtures/mp3s"
 # music_importer = MP3Importer.new(test_music_path)
 # music_importer.path
