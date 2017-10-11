@@ -43,3 +43,12 @@ end
 # artist.save
 # Artist.all.include?(artist)
 #=> true
+
+# dirty_diana = Song.new("Dirty Diana")
+# billie_jean = Song.new("Billie Jean")
+# artist.add_song(dirty_diana)
+# artist.add_song(billie_jean)
+# artist.print_songs
+#=> "Dirty Diana\nBillie Jean\n"
+
+
